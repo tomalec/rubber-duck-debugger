@@ -1,0 +1,23 @@
+{
+    "name": "rubber-duck-debugger",
+    "version": "0.0.1",
+    "description": "Custom Element that provides amazing, full-featured debugging tool.",
+    "license": "MIT",
+    "main": "src/rubber-duck-debugger.html",
+    "authors": [
+        "Tomek Wytrebowicz <tomalecpub@gmail.com>"
+    ],
+    "keywords": [
+        "web-components",
+        "debugger",
+        "duck"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "webcomponentsjs": "^0.5.1"
+    }
+}

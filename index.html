@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Custom Element that provides amazing, full-featured debugging tool.">
+
+    <!-- Facebook Metatags -->
+    <meta property="og:title" content="<rubber-duck-debugger>">
+    <meta property="og:description" content="Debug your code with quacking ease.">
+    <meta property="og:url" content="http://tomalec.github.io/rubber-duck-debugger/">
+    <meta property="og:image" content="http://tomalec.github.io/rubber-duck-debugger/demo/fb.png">
+
+    <title>&lt;rubber-duck-debugger&gt;</title>
+    <!-- Demo CSS -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="demo/demo.css">
+
+    <!-- Importing Web Component's Polyfill -->
+    <script src="../webcomponentsjs/webcomponents.min.js"></script>
+
+    <!-- Importing Custom Elements -->
+    <link rel="import" href="src/rubber-duck-debugger.html">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-container">
+        <div class="splash">
+            <h1 class="splash-head">
+                <div class="splash-first-line">&lt;<span class="highlight">rubber-duck-</span></div>
+                <div class="splash-second-line"><span class="highlight">debugger</span>&gt;</div>
+            </h1>
+            <p class="splash-subhead">
+                Debug your code with quacking ease
+            </p>
+            <p class="gh-btns pure-hidden-phone">
+                <iframe src="http://ghbtns.com/github-btn.html?user=tomalec&repo=rubber-duck-debugger&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="152" height="30"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=tomalec&repo=rubber-duck-debugger&type=fork&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30"></iframe>
+            </p>
+        </div>
+    </div>
+
+    <!-- Install -->
+    <div class="content">
+        <h2 class="content-head is-center">Install</h2>
+
+        <div class="section pure-g-r">
+            <div class="center">
+                <div class="pure-u-1">
+                    <h3 class="content-subhead">Install the component using Bower</h3>
+                    <pre>$ bower install rubber-duck-debugger</pre>
+                    <a class="pure-button" href="https://github.com/tomalec/rubber-duck-debugger/fork">Fork on GitHub</a>
+                    <a class="pure-button" href="https://github.com/tomalec/rubber-duck-debugger/archive/gh-pages.zip">Download as ZIP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Wrapper -->			
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="center section pure-u-1 pure-u-med-1-2 pure-u-lrg-3-5">
+        	<h2 class="content-head content-head-ribbon">&lt;rubber-duck-debugger&gt;</h2>
+	  		<p>is a Custom Element that provides amazing, full-featured debugging tool</p>
+			<div class="is-center">
+			    <!-- Using Custom Elements -->
+			    <rubber-duck-debugger></rubber-duck-debugger>
+			</div>
+		    <p>Just click on the <code>&lt;rubber-duck-debugger&gt;</code>, or <code>.ask()</code> it. Thanks to the newest technology, duck will listen to you carefully, so describe your problem the best you can, to find out the solution.</p>
+		</div>
+	</div>
+        <!-- Usage -->
+        <div class="content">
+            <h2 class="content-head is-center">Usage</h2>
+
+            <div class="section pure-g-r center">
+                <div class="pure-u-1">
+                    <h3 class="content-subhead">1. Import Web Components' polyfill</h3>
+                    <pre><code>&lt;script src="bower_components/platform/platform.js"&gt;&lt;/script&gt;</code></pre>
+
+                    <h3 class="content-subhead">2. Import Custom Element</h3>
+                    <pre><code>&lt;link rel="import" href="bower_components/rubber-duck-debugger/src/rubber-duck-debugger.html"&gt;</code></pre>
+
+                    <h3 class="content-subhead">3. Start using it!</h3>
+                    <pre><code>&lt;rubber-duck-debugger&gt;&lt;/rubber-duck-debugger&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer l-box is-center">
+            <p>
+                Made with <span class="love">♥</span> by <a href="http://github.com/tomalec">Tomek Wytrębowicz</a> under <a href="http://tomalec.mit-license.org/">MIT license</a>
+            <br/>
+            	Demo layout more-or-less from <a href="http://zenorocha.github.io/voice-elements/">Zeno's &lt;voice-elements&gt;</a>
+            </p>
+        </div>
+</body>
+</html>
