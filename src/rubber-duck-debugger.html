@@ -12,7 +12,7 @@
 </template>
 <script>
 (function() {
-    var importedDoc = window.importedDoc = document.currentScript.ownerDocument;
+    var importedDoc = (document._currentScript || document.currentScript).ownerDocument;
     var templ = importedDoc.getElementById("shadowDuck");
 
     resolveRelativePaths(templ.content, importedDoc.baseURI);
