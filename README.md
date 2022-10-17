@@ -8,29 +8,26 @@
 
 ## Install
 
-Install the component using [Bower](http://bower.io/):
+Install the component using [Bower](http://bower.io/) or npm:
 
 ```sh
 $ bower install rubber-duck-debugger --save
+$ npm install tomalec/rubber-duck-debugger --save
 ```
 
 Or [download as ZIP](https://github.com/tomalec/rubber-duck-debugger/archive/gh-pages.zip).
 
 ## Usage
 
-1. Import Web Components' polyfill:
+1. Import Custom Element:
 
     ```html
-    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <script type="module" src="node_modules/rubber-duck-debugger/src/rubber-duck-debugger.js"></script>
+    <!-- or -->
+    <script type="module" src="bower_components/rubber-duck-debugger/src/rubber-duck-debugger.js"></script>
     ```
 
-2. Import Custom Element:
-
-    ```html
-    <link rel="import" href="bower_components/rubber-duck-debugger/src/rubber-duck-debugger.html">
-    ```
-
-3. Start using it!
+2. Start using it!
 
     ```html
     <rubber-duck-debugger></rubber-duck-debugger>
@@ -87,7 +84,7 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/tomalec/rubber-duck-debugger/releases).
+For a detailed changelog, check [Releases](https://github.com/tomalec/rubber-duck-debugger/releases).
 
 ## License
 
