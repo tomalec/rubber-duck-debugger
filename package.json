@@ -1,6 +1,6 @@
 {
     "name": "rubber-duck-debugger",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Custom Element that provides amazing, full-featured debugging tool.",
     "license": "MIT",
     "main": "src/rubber-duck-debugger.js",
