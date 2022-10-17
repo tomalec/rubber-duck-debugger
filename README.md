@@ -8,10 +8,9 @@
 
 ## Install
 
-Install the component using [Bower](http://bower.io/) or npm:
+Install the component using NPM:
 
 ```sh
-$ bower install rubber-duck-debugger --save
 $ npm install tomalec/rubber-duck-debugger --save
 ```
 
@@ -21,10 +20,12 @@ Or [download as ZIP](https://github.com/tomalec/rubber-duck-debugger/archive/gh-
 
 1. Import Custom Element:
 
+    ```js
+    import 'rubber-duck-debugger';
+    ```
+    or
     ```html
     <script type="module" src="node_modules/rubber-duck-debugger/src/rubber-duck-debugger.js"></script>
-    <!-- or -->
-    <script type="module" src="bower_components/rubber-duck-debugger/src/rubber-duck-debugger.js"></script>
     ```
 
 2. Start using it!
@@ -50,28 +51,16 @@ Property        | Type        |  Description
 
 In order to run it locally you'll need to fetch some dependencies and a basic server setup.
 
-* Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
-
-    ```sh
-    $ [sudo] npm install -g bower grunt-cli
-    ```
-
 * Install local dependencies:
 
     ```sh
-    $ bower install && npm install
+    $ npm install
     ```
 
 * To test your project, start the development server and open `http://localhost:8000`.
 
     ```sh
-    $ grunt server
-    ```
-
-* To provide a live demo, send everything to `gh-pages` branch.
-
-    ```sh
-    $ grunt deploy
+    $ npx grunt server
     ```
 
 ## Contributing

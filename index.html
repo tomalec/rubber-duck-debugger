@@ -47,8 +47,8 @@
         <div class="section pure-g-r">
             <div class="center">
                 <div class="pure-u-1">
-                    <h3 class="content-subhead">Install the component using Bower</h3>
-                    <pre>$ bower install rubber-duck-debugger</pre>
+                    <h3 class="content-subhead">Install the component using NPM</h3>
+                    <pre>$ npm install tomalec/rubber-duck-debugger</pre>
                     <a class="pure-button" href="https://github.com/tomalec/rubber-duck-debugger/fork">Fork on GitHub</a>
                     <a class="pure-button" href="https://github.com/tomalec/rubber-duck-debugger/archive/gh-pages.zip">Download as ZIP</a>
                 </div>
@@ -73,13 +73,12 @@
 
             <div class="section pure-g-r center">
                 <div class="pure-u-1">
-                    <h3 class="content-subhead">1. Import Web Components' polyfill</h3>
-                    <pre><code>&lt;script src="bower_components/webcomponentsjs/webcomponents.min.js"&gt;&lt;/script&gt;</code></pre>
+                    <h3 class="content-subhead">1. Import Custom Element</h3>
+                    <pre><code>import 'rubber-duck-debugger';</code></pre>
+                    or
+                    <pre><code>&lt;script type="module" src="node_modules/rubber-duck-debugger/src/rubber-duck-debugger.js"&gt;&lt;/script&gt;</code></pre>
 
-                    <h3 class="content-subhead">2. Import Custom Element</h3>
-                    <pre><code>&lt;link rel="import" href="bower_components/rubber-duck-debugger/src/rubber-duck-debugger.html"&gt;</code></pre>
-
-                    <h3 class="content-subhead">3. Start using it!</h3>
+                    <h3 class="content-subhead">2. Start using it!</h3>
                     <pre><code>&lt;rubber-duck-debugger&gt;&lt;/rubber-duck-debugger&gt;</code></pre>
                 </div>
             </div>
